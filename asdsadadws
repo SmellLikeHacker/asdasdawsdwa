@@ -1,0 +1,29 @@
+
+---------------------------Tween
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),
+{CFrame = CFrame.new( HumanoidRootPart )}):Play()
+
+---------------------------ย้ายแมพ
+local TeleportService = game:GetService("TeleportService")
+TeleportService:Teleport(Place , player)
+
+---------------------------functions เปิด/ปิด
+_G.A = true
+while _G.A do wait()
+pcall(function()
+
+    end)
+end
+---------------------------Simple Spy เสริม
+local UserInputService = game:GetService("UserInputService")
+local function onInputBegan(input, gameProcessed)
+if input.KeyCode == Enum.KeyCode.Z then --เปลี่ยนได้แล้วแต่
+local player = game.Players.LocalPlayer
+for i = 1, 20 do --เปลี่ยนได้แล้วแต่
+---Script remote
+end
+end
+end
+UserInputService.InputBegan:Connect(onInputBegan)
+---------------------------
